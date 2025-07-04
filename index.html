@@ -1,219 +1,143 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baharul Islam | Mathematician</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baharul Islam </title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f9fa; /* Changed from blue gradient to light background */
-      color: #222;
-    }
-
-    .hero-banner {
-      background: url('math-graphic.jpg') center/cover no-repeat;
-      padding: 120px 20px 80px;
-      text-align: center;
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
-    .hero-banner h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0;
-      background: linear-gradient(to right, #0d47a1, #42a5f5, #7c4dff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: -60px auto 60px;
-      padding: 40px 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-    }
-
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 20px;
-      border-bottom: 3px solid #1a73e8;
-      padding-bottom: 30px;
-    }
-
-    .contact-info {
-      flex: 1 1 350px;
-      font-size: 1rem;
-      color: #444;
-    }
-
-    .contact-info p {
-      margin: 6px 0;
-    }
-
-    .contact-info a {
-      color: #1a73e8;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    main section {
-      margin-top: 40px;
-    }
-
-    main section h2 {
-      font-size: 2rem;
-      color: #0d47a1;
-      border-bottom: 3px solid #1a73e8;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-
-    main section p, main section ul {
-      font-size: 1.1rem;
+      background: #f4f4f9;
       color: #333;
     }
-
-    main ul {
+    header {
+      background: #003366;
+      color: #fff;
+      padding: 20px 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0;
+    }
+    main {
+      padding: 40px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+      color: #003366;
+    }
+    ul {
       list-style-type: square;
-      padding-left: 22px;
+      margin-left: 20px;
     }
-
-    main ul li {
-      margin-bottom: 10px;
+    a {
+      color: #003366;
+      text-decoration: none;
     }
-
-    .photos {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    .photos img {
-      width: 320px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-      transition: transform 0.3s ease;
-    }
-
-    .photos img:hover {
-      transform: scale(1.05);
-    }
-
-    .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      border-radius: 12px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    }
-
-    .video-wrapper iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 0;
-      border-radius: 12px;
-    }
-
-    .connect {
-      text-align: center;
-      margin-top: 60px;
-      padding-top: 30px;
-      border-top: 3px solid #1a73e8;
-    }
-
-    .social-icons {
-      display: inline-flex;
-      gap: 30px;
-      font-size: 2.8rem;
-    }
-
-    .social-icons a {
-      color: #1a73e8;
-      transition: color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      color: #0047b3;
-    }
-
-    @media (max-width: 850px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      header h1, .contact-info {
-        flex: 1 1 100%;
-      }
-      .photos {
-        justify-content: center;
-      }
-    }
-
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      main section h2 {
-        font-size: 1.6rem;
-      }
-      main section p, main section ul {
-        font-size: 1rem;
-      }
-      .photos img {
-        width: 100%;
-      }
-      .social-icons {
-        font-size: 2.2rem;
-        gap: 20px;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="hero-banner">
-    <h2>Exploring Mathematics & Innovation</h2>
-  </div>
-
-  <div class="container">
-    <header>
-      <h1>Baharul Islam</h1>
-      <div class="contact-info">
-        <p>📞 +8801946548481 | +8801568268234</p>
-        <p>✉️ <a href="mailto:ibaharul2015@gmail.com">ibaharul2015@gmail.com</a></p>
-        <p>🔗 <a href="https://linkedin.com/in/baharul-islam-088a94332" target="_blank">LinkedIn Profile</a></p>
-        <p>🌐 <a href="https://ibaharul2015.github.io" target="_blank">Personal Website</a></p>
-      </div>
+  <header>
+    <h1>Baharul Islam</h1>
+    <p>📞 +8801946548481 | +8801568268234</p>
+    <p>✉️ <a href="mailto:ibaharul2015@gmail.com">ibaharul2015@gmail.com</a></p>
+    <p>🔗 <a href="https://linkedin.com/in/baharul-islam-088a94332" target="_blank">LinkedIn Profile</a></p>
+    <p>🌐 <a href="https://ibaharul2015.github.io" target="_blank">Personal Website</a></p>
+  
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+      <img src="photo1.jpg" alt="Baharul Islam" style="max-width: 100%; width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+      <img src="photo2.jpg" alt="Baharul Islam" style="max-width: 100%; width: 300px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+    </div>
     </header>
+    
+  <main>
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Aspiring mathematician with a solid foundation in analytical and computational mathematics, currently completing M.Sc. in Applied Mathematics. Strong interest in applying mathematical theories to solve real-world problems in science and engineering. Highly adaptable, detail-oriented, and driven to contribute meaningfully to academic and research environments.</p>
+    </section>
 
-    <main>
-      <!-- Keep all your sections exactly as written -->
-      <!-- ... Professional Summary, Education, Skills, etc. ... -->
-    </main>
-  </div>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>M.Sc. in Applied Mathematics</strong> (Expected 2025)<br>Bangabandhu Sheikh Mujibur Rahman Science & Technology University, Gopalganj<br><em>Courses:</em> Relativity, Fluid Dynamics, Fourier & Wavelets, Industrial Math</li>
+        <li><strong>B.Sc. (Hons.) in Mathematics</strong> (2024) | CGPA: 3.26 / 4.00<br>Bangabandhu Sheikh Mujibur Rahman Science & Technology University, Gopalganj<br><em>Courses:</em> Linear Algebra, Differential Equations, Real/Complex Analysis, MATLAB, Numerical Methods</li>
+        <li><strong>Minor:</strong> C/C++, DBMS, Accounting, Economics, Statistics<br><strong>Thesis:</strong> Analytical and Numerical Modeling of Relapsing-Remitting Multiple Sclerosis</li>
+        <li><strong>H.S.C. in Science</strong> (2018) | GPA: 4.72 / 5.00<br>Basundia School and College, Jashore Board</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming: MATLAB, FORTRAN, C/C++, SQL</li>
+        <li>Software: MS Office Suite, Adobe Photoshop, MAPLE</li>
+        <li>Platforms: Windows, Linux</li>
+        <li>IT Skills: Troubleshooting, Internet Research, Data Analysis</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul>
+        <li>Bengali – Native</li>
+        <li>English – Working Proficiency</li>
+        <li>Hindi – Intermediate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Awards & Achievements</h2>
+      <ul>
+        <li>Government scholarships in PSC and JSC examinations</li>
+        <li>Recognized for outstanding attendance and discipline in school</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Personal Attributes</h2>
+      <ul>
+        <li>Strong analytical thinking</li>
+        <li>Excellent team collaboration and leadership</li>
+        <li>Adaptable and creative mindset</li>
+        <li>Effective communication and time management</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Publications</h2>
+      <p><strong>Baharul Islam</strong>, Sabina Yeasmin, Monazat Ali, Md. Ali Akber Rony, Dr. Dipankar Kumar (Corresponding Author).<br>
+      <em>"Analytical Simulation of a β-Derivative Multiple Sclerosis Model: Insights into Fractional Dynamics and Disease Progression."</em><br>
+      Submitted to <strong>Partial Differential Equations in Applied Mathematics</strong>, Elsevier. Manuscript Number: PADIFF-D-25-00325.</p>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>
+          <strong>Dr. Dipankar Kumar</strong><br>
+          Associate Professor, Dept. of Mathematics, BSMRSTU<br>
+          📞 +8801722285442 | ✉️ <a href="mailto:dks.bsmrstu@gmail.com">dks.bsmrstu@gmail.com</a>
+        </li>
+        <li>
+          <strong>Dr. Md. Shuzon Ali</strong><br>
+          Assistant Professor, Dept. of Mathematics, BSMRSTU<br>
+          📞 +8801332770751 | ✉️ <a href="mailto:sali_4222@bsmrstu.edu.bd">sali_4222@bsmrstu.edu.bd</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
